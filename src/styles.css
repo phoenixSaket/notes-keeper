@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Cabin', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.shadows {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
