@@ -1,9 +1,12 @@
 <div class="login-container">
     <div class="page-title">Welcome</div>
-    <input class="input-text shadows" type="text" type="text" placeholder="Username">
-    <input class="input-text shadows" type="text" type="password" placeholder="Passwords">
+    <input class="input-text shadows" [ngClass]="this.invalidEmail ? 'invalid' : ''" type="text" type="email" placeholder="Email" (change)="inputChange('email', $event)" [value]="this.email">
+    <input class="input-text shadows" type="text" type="password" placeholder="Password" (change)="inputChange('password', $event)" [value]="this.password">
+    <div class="invalid-message" *ngIf="this.loginFailed">
+        Invalid Credentials
+    </div>
     <div class="button-container">
-        <div class="button shadows">Login</div>
-        <div class="button shadows">Create New Account</div>
+        <div class="button shadows" (click)="loginClicked()">Login</div>
+        <div class="button shadows" routerLink="/new-account">Create New Account</div>
     </div>
 </div>

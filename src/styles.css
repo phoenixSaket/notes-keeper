@@ -9,3 +9,31 @@
 .shadows {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
+
+.button {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 5px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.input-text {
+    border: 0px solid grey;
+    height: 25px;
+    border-radius: 5px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 350px;
+    margin: 5px;
+    padding: 5px 10px;
+    background: white;
+    color: #000000;
+}
+
+.input-text:focus-visible {
+    outline: none;
+}

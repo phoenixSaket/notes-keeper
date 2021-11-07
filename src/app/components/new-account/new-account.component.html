@@ -1,0 +1,15 @@
+<div class="new-account-page">
+    <div class="page-title">Create Account</div>
+    <div class="input-container">
+        <input class="input-text shadows" [ngClass]="this.invalidEmail ? 'invalid' : ''" type="text" type="email"
+            placeholder="Email" (change)="inputChange('email', $event)" [value]="this.email">
+        <input class="input-text shadows" [ngClass]="this.invalidPassword ? 'invalid' : ''" type="text" type="password"
+            placeholder="Password" (change)="inputChange('password', $event)" [value]="this.password">
+        <input class="input-text shadows" [ngClass]="this.invalidPassword ? 'invalid' : ''" type="text" type="password"
+            placeholder="Confirm Password" (change)="inputChange('confirm password', $event)" [value]="this.confirmPassword">
+    </div>
+    <div class="button-container">
+        <div class="button shadows" routerLink="">Back</div>
+        <div class="button shadows" (click)="createClicked()">Create Account</div>
+    </div>
+</div>

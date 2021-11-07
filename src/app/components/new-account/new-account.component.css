@@ -1,10 +1,19 @@
+.new-account-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    max-width: 500px;
+}
+
 .page-title {
     font-size: 3rem;
     margin: 15px;
     border-bottom: 2px solid grey;
 }
 
-.login-container {
+.input-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,17 +28,4 @@
     width: 100%;
     flex-wrap: wrap;
     margin: 10px 5px;
-}
-
-.invalid {
-    outline: 2px solid tomato;
-}
-
-.invalid-message {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0px 0px 1px rgb(223, 38, 38);
-    ;
-    margin-top: 5px;
-    color: tomato;
 }
